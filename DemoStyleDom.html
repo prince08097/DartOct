@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <h1 id="heading1">Welcome to JavaScript Tutorial</h1>
+        <p id="para1" style="color: blue;">Let us learn DOM API</p>
+    </div>
+
+
+    <script>
+        //resets style property
+        var c=prompt("Enter the color  bw red yellow or green");
+        if(c=="red")
+        {
+            document.body.style.backgroundColor="red";
+        }
+        if(c=="yellow")
+        {
+            document.body.style.backgroundColor="yellow";
+        }
+        if(c=="green")
+        {
+            document.body.style.backgroundColor="green";
+        }
+        document.getElementById("div1").style.color = "red";
+        document.getElementById("div1").style.color="yellow";
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking Details</title>
+    <style>
+
+        div#maincontent {
+            height: 100px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 10px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+ 
+
+<body>
+    <div id="heading">
+          <h2>Booking Summary</h2>
+    </div>
+
+    
+    <div id="maincontent">
+        <script>
+            //Write the code to display the discounted price on click of the text
+            //calculateCost(seats): Calculate and display the total cost to be paid 
+            //by the customer for the tickets he has bought. 
+
+            //calculateDiscount(seats): Calculate discount on the tickets bought by the 
+            //customer. Invoke this function only when the user clicks on a link. 
+
+
+            let num_ticket = prompt("Please enter No of tickets! ");
+
+
+            document.write("Cost per ticket is : $9" + "<br><br>");
+
+            calculateCost(num_ticket);
+
+            function calculateCost(seats) {
+                if (seats >= 6) {
+                    document.write("Booking is not allowed for above 5 seats" + "<br><br>");
+                }
+                else {
+                    document.write("total cost:" + (seats * 9) + "$<br><br>");
+
+                    if (seats > 2 && seats < 6) {
+                        console.log("hello")
+                        //<h4> congrats {seats} are available <a onClick="calculateDiscount({seats})">apply</a></h4>
+                        document.write(seats + "  are availbale for discount " +"<br><br>"); 
+                    
+                    
+                }
+
+                
+
+
+            }
+            }
+            
+            function cal()
+            {
+                calculateDiscount(num_ticket);
+            }
+            
+
+           function calculateDiscount(seats)
+            {
+                document.write("discounted amount"+ (seats*9.0*(1-0.05)));
+            }
+
+
+
+        </script>
+<div >
+
+    
+    <button onclick="cal()">apply</button>
+
+</div>
+
+    
+</body>
+ 
+
+</html>
